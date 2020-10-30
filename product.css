@@ -1,0 +1,44 @@
+.column.left, .column.right {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+div.cakepic {
+    margin: 5px;
+    /* border: 1px solid #ccc; */
+    float: left;
+    width: 180px;
+    height: 300px;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+
+@media screen and (min-width: 750px) {
+    .column.left {
+        float: left;
+        width: 48%;
+        text-align: center;
+    }
+    
+    .column.right {
+        float: right;
+        width: 48%;
+        text-align: center;
+    }
+}
